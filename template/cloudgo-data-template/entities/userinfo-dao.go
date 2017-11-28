@@ -1,7 +1,7 @@
 package entities
 
 import (
-	"hw/hw5/sqlt"
+	"github.com/YlingMA/Cloudgo-data/template/sqlt"
 )
 
 type userInfoDao struct {
