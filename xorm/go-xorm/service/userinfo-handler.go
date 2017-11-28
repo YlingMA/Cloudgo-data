@@ -4,7 +4,7 @@ import (
 	"net/http"
 	"strconv"
 
-	"hw/go-xorm/entities"
+	"github.com/Cloudgo-data/xorm/go-xorm/entities"
 
 	"github.com/unrolled/render"
 )
