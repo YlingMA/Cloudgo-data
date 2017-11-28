@@ -1,6 +1,6 @@
 package entities
 
-import "hw/hw5/sqlt"
+import "github.com/YlingMA/Cloudgo-data/template/sqlt"
 
 //UserInfoAtomicService .
 type UserInfoAtomicService struct{}
