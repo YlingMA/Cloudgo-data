@@ -3,7 +3,7 @@ package main
 import (
 	"os"
 
-	"hw/hw5/cloudgo-data-template/service"
+	"github.com/Cloudgo-data/template/cloudgo-data-template/service"
 	flag "github.com/spf13/pflag"
 )
 
