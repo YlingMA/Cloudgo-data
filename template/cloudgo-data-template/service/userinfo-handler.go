@@ -1,0 +1,70 @@
+package service
+
+import (
+	"net/http"
+	"strconv"
+
+	"hw/hw5/cloudgo-data-template/entities"
+
+	"github.com/unrolled/render"
+)
+
+func postUserInfoHandler(formatter *render.Render) http.HandlerFunc {
+
+	return func(w http.ResponseWriter, req *http.Request) {
+		req.ParseForm()
+		if len(req.Form["username"][0]) == 0 {
+			formatter.JSON(w, http.StatusBadRequest, struct{ ErrorIndo string }{"Bad Input!"})
+			return
+		}
+		u := entities.NewUserInfo(entities.UserInfo{UserName: req.Form["username"][0]})
+		u.DepartName = req.Form["departname"][0]
+		entities.UserInfoService.Save(u)
+		formatter.JSON(w, http.StatusOK, u)
+	}
+}
+
+func getUserInfoHandler(formatter *render.Render) http.HandlerFunc {
+
+	return func(w http.ResponseWriter, req *http.Request) {
+		req.ParseForm()
+		if len(req.Form["userid"][0]) != 0 {
+			i, _ := strconv.ParseInt(req.Form["userid"][0], 10, 32)
+
+			u := entities.UserInfoService.FindByID(int(i))
+			formatter.JSON(w, http.StatusBadRequest, u)
+			return
+		}
+		ulist := entities.UserInfoService.FindAll()
+		formatter.JSON(w, http.StatusOK, ulist)
+	}
+}
+func getUserNameHandler(formatter *render.Render) http.HandlerFunc {
+
+	return func(w http.ResponseWriter, req *http.Request) {
+		req.ParseForm()
+		if len(req.Form["username"][0]) != 0 {
+			i:=req.Form["username"][0]
+
+			u := entities.UserInfoService.FindByName(i)
+			formatter.JSON(w, http.StatusBadRequest, u)
+			return
+		}
+		ulist := entities.UserInfoService.FindAll()
+		formatter.JSON(w, http.StatusOK, ulist)
+	}
+}
+func getAllUserHandler(formatter *render.Render) http.HandlerFunc {
+
+	return func(w http.ResponseWriter, req *http.Request) {
+		u := entities.UserInfoService.FindAll()
+		formatter.JSON(w, http.StatusBadRequest, u)
+	}
+}
+func getUserCountHandler(formatter *render.Render) http.HandlerFunc {
+
+	return func(w http.ResponseWriter, req *http.Request) {
+		c := entities.UserInfoService.Count()
+		formatter.JSON(w, http.StatusOK, c)
+	}
+}
