@@ -4,7 +4,7 @@ import (
 	"net/http"
 	"strconv"
 
-	"hw/hw5/cloudgo-data-template/entities"
+	"github.com/YlingMA/Cloudgo-data/template/cloudgo-data-template/entities"
 
 	"github.com/unrolled/render"
 )
