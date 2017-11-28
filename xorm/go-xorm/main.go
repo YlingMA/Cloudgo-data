@@ -3,7 +3,7 @@ package main
 import (
 	"os"
 
-	"hw/go-xorm/service"
+	"github.com/Cloudgo-data/xorm/go-xorm/service"
 	flag "github.com/spf13/pflag"
 )
 
