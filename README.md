@@ -104,13 +104,13 @@ Delete():删除所有对象信息
 ##(b)具体实现时使用的功能
 * SELECT * FROM username
 
- ![image](https://github.com/YlingMA/Cloudgo-data/blob/master/image/username%3Dxiaoma.png)
+ ![image](https://github.com/YlingMA/Cloudgo-data/tree/master/image/username%3Dxiaoma.png)
 
 如图username=xiaoma
 
 * SELECT * FROM userinfo
 
-![image](https://github.com/YlingMA/Cloudgo-data/blob/master/image/findall.png)
+![image](https://github.com/YlingMA/Cloudgo-data/tree/master/image/findall.png)
 
 图findall
 
