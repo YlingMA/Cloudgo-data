@@ -117,13 +117,13 @@ Delete():删除所有对象信息
 
 * SELECT ID WHERE id = 1
 
-![image](https://github.com/YlingMA/Cloudgo-data/blob/master/image/selectone.png)
+![image](https://github.com/YlingMA/Cloudgo-data/blob/master/image/selectone.PNG)
 
 图selectone
 
 * 得到总共的用户数：
 
-![image](https://github.com/YlingMA/Cloudgo-data/blob/master/image/count.png)
+![image](https://github.com/YlingMA/Cloudgo-data/blob/master/image/count.PNG)
 
 图count
 
