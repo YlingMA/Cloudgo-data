@@ -68,13 +68,23 @@ ab -n 100 -c 10 -p test.txt http://localhost:8080/service/userinfo
 
 ![image](https://github.com/YlingMA/Cloudgo-data/blob/master/image/ab-post1.png)
 
-如图ab-post-1
+如图ab-post1
+
+![image](https://github.com/YlingMA/Cloudgo-data/blob/master/image/ab-post2.png)
+
 如图ab-post-2
+
+![image](https://github.com/YlingMA/Cloudgo-data/blob/master/image/ab-post3.png)
+
 如图ab-post-3
 其中，test.txt中内容如下图：
 
+![image](https://github.com/YlingMA/Cloudgo-data/blob/master/image/ab-post-test.txt.png)
+
 测试GET:
 ab -n 100 -c 10 http://localhost:8080/service/userinfo?userid=
+
+![image](https://github.com/YlingMA/Cloudgo-data/blob/master/image/ab-get.png)
 
 50%的请求在42ms内完成了，所有的请求在71ms内完成。每一组请求平均耗费47.813ms，每个请求平均花费4.7813秒。每秒平均完成209.15个选择。
 
@@ -93,20 +103,26 @@ Delete():删除所有对象信息
 ##(b)具体实现时使用的功能
 * SELECT * FROM username
 
+![image](https://github.com/YlingMA/Cloudgo-data/blob/master/image/username=xiaoma.png)
+
 如图username=xiaoma
 
-
 * SELECT * FROM userinfo
+
+![image](https://github.com/YlingMA/Cloudgo-data/blob/master/image/findall.png)
+
 图findall
 
-
 * SELECT ID WHERE id = 1
+
+![image](https://github.com/YlingMA/Cloudgo-data/blob/master/image/selectone.png)
+
 图selectone
 
-
-
-
 * 得到总共的用户数：
+
+![image](https://github.com/YlingMA/Cloudgo-data/blob/master/image/count.png)
+
 图count
 
 ##(c)下面介绍template即sqlt的用法：
