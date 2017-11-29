@@ -72,11 +72,11 @@ ab -n 100 -c 10 -p test.txt http://localhost:8080/service/userinfo
 
 ![image](https://github.com/YlingMA/Cloudgo-data/blob/master/image/ab-post2.png)
 
-如图ab-post-2
+如图ab-post2
 
 ![image](https://github.com/YlingMA/Cloudgo-data/blob/master/image/ab-post3.png)
 
-如图ab-post-3
+如图ab-post3
 
 其中，test.txt中内容如下图：
 
@@ -86,6 +86,7 @@ ab -n 100 -c 10 -p test.txt http://localhost:8080/service/userinfo
 ab -n 100 -c 10 http://localhost:8080/service/userinfo?userid=
 
 ![image](https://github.com/YlingMA/Cloudgo-data/blob/master/image/ab-get.png)
+
 
 50%的请求在42ms内完成了，所有的请求在71ms内完成。每一组请求平均耗费47.813ms，每个请求平均花费4.7813秒。每秒平均完成209.15个选择。
 
@@ -104,13 +105,13 @@ Delete():删除所有对象信息
 ##(b)具体实现时使用的功能
 * SELECT * FROM username
 
- ![image](https://github.com/YlingMA/Cloudgo-data/tree/master/image/username%3Dxiaoma.png)
+ ![image](https://github.com/YlingMA/Cloudgo-data/blob/master/image/username%3Dxiaoma.PNG)
 
 如图username=xiaoma
 
 * SELECT * FROM userinfo
 
-![image](https://github.com/YlingMA/Cloudgo-data/tree/master/image/findall.png)
+![image](https://github.com/YlingMA/Cloudgo-data/blob/master/image/findall.PNG)
 
 图findall
 
