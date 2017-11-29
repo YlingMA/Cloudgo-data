@@ -66,7 +66,7 @@ Ab测试
 测试post：
 ab -n 100 -c 10 -p test.txt http://localhost:8080/service/userinfo
 
-![image](https://raw.githubusercontent.com/YlingMA/Cloudgo-data/blob/master/image/ab-post1.PNG)
+![image](https://github.com/YlingMA/Cloudgo-data/blob/master/image/ab-post1.PNG)
 
 如图ab-post-1
 如图ab-post-2
