@@ -77,6 +77,7 @@ ab -n 100 -c 10 -p test.txt http://localhost:8080/service/userinfo
 ![image](https://github.com/YlingMA/Cloudgo-data/blob/master/image/ab-post3.png)
 
 如图ab-post-3
+
 其中，test.txt中内容如下图：
 
 ![image](https://github.com/YlingMA/Cloudgo-data/blob/master/image/ab-post-test.txt.png)
@@ -103,7 +104,7 @@ Delete():删除所有对象信息
 ##(b)具体实现时使用的功能
 * SELECT * FROM username
 
-![image](https://github.com/YlingMA/Cloudgo-data/blob/master/image/username=xiaoma.png)
+![image](https://github.com/YlingMA/Cloudgo-data/blob/master/image/username%3Dxiaoma.png)
 
 如图username=xiaoma
 
